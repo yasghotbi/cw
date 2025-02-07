@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+
+</head>
+<body>
+<a href="{% url 'post_list' %}">all post</a>
+<br>
+<a href="{% url 'author_list' %}">all author</a>
+
+<div>{% for i in latest_post %}
+    <ul>
+        <li>{{i.title}}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

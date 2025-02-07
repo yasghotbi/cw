@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all posts</title>
+</head>
+<h1>all posts</h1>
+
+<body>
+{%for post in posts %}
+<li>
+    <a href="{% url 'post_details' post_id %}"> {{post.title}}</a>
+</li>
+{% endfor %}
+</body>
+</html>

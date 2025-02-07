@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all authors </title>
+
+</head>
+<body>
+{% for author in authors %}
+  <li><a href="{% url author_detail author.id %}">{{author.name}} </a> </li>
+{% endfor %}
+</body>
+</html>

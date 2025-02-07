@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>author detail</title>
+</head>
+<body>
+<div>
+    <p><strong>name</strong>{{author.first_name}}-{{author.last_name}}</p>
+</div>
+<div>
+    <p><strong>email</strong>{{author.email}}</p>
+</div>
+<div>
+    <p><strong>bio</strong>{{author.bool}}</p>
+</div>
+<h1>{{aouthor.lastname}}'s posts</h1>
+<div>
+    {% for post in posts %}
+        <li>{{post}}<li>
+</div>
+</body>
+</html>
