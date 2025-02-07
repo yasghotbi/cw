@@ -12,13 +12,13 @@
     <p><strong>email</strong>{{author.email}}</p>
 </div>
 <div>
-    <p><strong>bio</strong>{{author.bool}}</p>
+    <p><strong>bio</strong>{{author.bio}}</p>
 </div>
 <div><h1>{{author.last_name}}'s posts</h1></div>
 <div>
     {% for post in posts %}
         <li>
-            <a href="{% url 'post_details' post.id %}">{{post.title}}</a>
+            <a href="{% url 'PostDetail' post.pk %}">{{post.title}}</a>
         <li>
 
     {% endfor %}

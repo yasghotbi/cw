@@ -27,6 +27,7 @@ urlpatterns = [
     path('post/', include('post.urls')),
     path('author/', include('Author.urls')),
     path('', home ,name='home'),
+    path('message/', include('message.urls')),
 
 
 ]
