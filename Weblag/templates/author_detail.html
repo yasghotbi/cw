@@ -14,10 +14,14 @@
 <div>
     <p><strong>bio</strong>{{author.bool}}</p>
 </div>
-<h1>{{aouthor.lastname}}'s posts</h1>
+<div><h1>{{author.last_name}}'s posts</h1></div>
 <div>
     {% for post in posts %}
-        <li>{{post}}<li>
+        <li>
+            <a href="{% url 'post_details' post.id %}">{{post.title}}</a>
+        <li>
+
+    {% endfor %}
 </div>
 </body>
 </html>

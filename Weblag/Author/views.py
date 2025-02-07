@@ -10,6 +10,6 @@ def author_list(request):
 
 
 def author_detail(request,author_id):
-    author = get_object_or_404(Author,author_id=author_id)
-    posts = author.post_set.all()
+    author = get_object_or_404(Author,id=author_id)
+    posts = author.posts.all()
     return render(request,'author_detail.html',{'author':author,'posts':posts})

@@ -17,7 +17,7 @@ def post_list(request):
 
 
 def post_detail(request,post_id):
-    post = get_object_or_404(Post,post_id=post_id)
+    post = get_object_or_404(Post,id=post_id)
     return render(request,'post_detail.html',{'post':post})
 
 
